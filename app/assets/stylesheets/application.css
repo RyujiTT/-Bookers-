@@ -1,0 +1,119 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.top-box, .index-box, .show-box, .edit-box {
+  margin: 33px;
+}
+
+.top-box p {
+  margin: 33px;
+}
+
+h1 {
+  margin: 33px 0;
+  font-size: 25px;
+}
+p {
+  font-size: 13px;
+}
+.index-box h2 {
+  margin-top: 33px;
+  margin-bottom: 13px;
+}
+.create-box {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.create-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+}
+.create-body {
+  margin-bottom: 10px;
+
+}
+
+td {
+  padding-bottom: 7px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.edit-content {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+.edit-title {
+  margin-bottom: 10px;
+}
+.edit-body {
+  margin-bottom: 10px;
+}
+.edit-button {
+  padding: 10px 0;
+
+}
+.link-button {
+  background-color: white;
+  color: black;
+  font-size: 13px;
+}
+
+.link-button :hover {
+  background-color: black;
+  color: white;
+}
+
+.show-title {
+  margin: 33px;
+}
+.show-body {
+  margin: 33px;
+}
+
+.error-box {
+  width: 30%;
+  padding: 7px;
+  height: 180px;
+  border: 4px solid red;
+}
+.error-box h2 {
+    text-align: left;
+    padding: 5px;
+    font-size: 12px;
+    margin: -7px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+.message-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  font-size: 13px;
+}
+#notice {
+  color: green;
+}
